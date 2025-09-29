@@ -457,8 +457,19 @@ body.is-nav-open .c-nav-toggle__bar::after {
   padding-left: 72px;
   font-weight: 600;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
-  color: var(--color-primary-dark);
+  color: var(--color-text);
   text-align: left;
+}
+
+.c-activities__item strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.c-activities__item p {
+  font-size: 16px;
 }
 
 .c-activities__item::before {
