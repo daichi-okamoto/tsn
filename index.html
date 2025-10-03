@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>一般社団法人 高森スポーツネットワーク</title>
   <meta name="description" content="地域のスポーツ活動を支え、つながりを生む高森スポーツネットワークの公式サイト。">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/foundation/_reset.css">
+  <link rel="stylesheet" href="assets/css/foundation/_variables.css">
+  <link rel="stylesheet" href="assets/css/foundation/_base.css">
+  <link rel="stylesheet" href="assets/css/layout/_layout.css">
+  <link rel="stylesheet" href="assets/css/object/component/_base.css">
+  <link rel="stylesheet" href="assets/css/object/component/_header.css">
+  <link rel="stylesheet" href="assets/css/object/project/_home.css">
 </head>
 <body class="l-page">
   <header class="l-header" role="banner">
@@ -27,10 +32,10 @@
           <span class="c-nav-close__icon"></span>
         </button>
         <ul class="c-global-nav__list">
-          <li class="c-global-nav__item"><a class="c-global-nav__link" href="#">ホーム</a></li>
-          <li class="c-global-nav__item"><a class="c-global-nav__link" href="#philosophy">企業理念</a></li>
-          <li class="c-global-nav__item"><a class="c-global-nav__link" href="#activities">活動内容</a></li>
-          <li class="c-global-nav__item"><a class="c-global-nav__link" href="#team">社員紹介</a></li>
+          <li class="c-global-nav__item"><a class="c-global-nav__link" href="/">ホーム</a></li>
+          <li class="c-global-nav__item"><a class="c-global-nav__link" href="/news/">お知らせ</a></li>
+          <li class="c-global-nav__item"><a class="c-global-nav__link" href="/activity/">活動内容</a></li>
+          <li class="c-global-nav__item"><a class="c-global-nav__link" href="/employee/">社員紹介</a></li>
           <li class="c-global-nav__item c-global-nav__item--cta"><a class="c-global-nav__link" href="#contact">お問い合わせ</a></li>
         </ul>
       </nav>
@@ -38,13 +43,13 @@
     </div>
   </header>
   <main class="l-main" role="main">
-    <section id="hero" class="o-section c-hero" aria-labelledby="hero-title">
-      <div class="c-hero__media">
-        <img class="c-hero__image" src="assets/images/tsn-fv.png" alt="スポーツイベントに参加する人々の写真">
+    <section id="hero" class="o-section p-hero" aria-labelledby="hero-title">
+      <div class="p-hero__media">
+        <img class="p-hero__image" src="assets/images/tsn-fv.png" alt="スポーツイベントに参加する人々の写真">
       </div>
-      <div class="o-container c-hero__body">
-        <h2 id="hero-title" class="c-hero__title">スポーツで笑顔をつなぐ</h2>
-        <p class="c-hero__lead">世代も立場も超えて、笑顔あふれる地域を育みます</p>
+      <div class="o-container p-hero__body">
+        <h2 id="hero-title" class="p-hero__title">スポーツで笑顔をつなぐ</h2>
+        <p class="p-hero__lead">世代も立場も超えて、笑顔あふれる地域を育みます</p>
       </div>
     </section>
     <section id="philosophy" class="o-section c-section" aria-labelledby="philosophy-title">
@@ -52,98 +57,63 @@
         <header class="c-section-header">
           <h2 id="philosophy-title" class="c-section-header__title">企業理念</h2>
         </header>
-        <ul class="c-philosophy">
-          <li class="c-philosophy__item" aria-labelledby="mission-title">
-            <div class="c-philosophy__figure">
+        <ul class="p-philosophy">
+          <li class="p-philosophy__item" aria-labelledby="mission-title">
+            <div class="p-philosophy__figure">
               <img src="assets/images/tsn-mission.png" alt="ミッションを象徴するアイコン">
             </div>
-            <div class="c-philosophy__body">
-              <p class="c-philosophy__text">スポーツを通じて人と人をつなぎ、町民の健康と笑顔を育み、地域の魅力向上に貢献します。</p>
+            <div class="p-philosophy__body">
+              <p class="p-philosophy__text">スポーツを通じて人と人をつなぎ、町民の健康と笑顔を育み、地域の魅力向上に貢献します。</p>
             </div>
           </li>
-          <li class="c-philosophy__item" aria-labelledby="vision-title">
-            <div class="c-philosophy__figure">
+          <li class="p-philosophy__item" aria-labelledby="vision-title">
+            <div class="p-philosophy__figure">
               <img src="assets/images/tsn-vision.jpg" alt="ビジョンを象徴するアイコン">
             </div>
-            <div class="c-philosophy__body">
-              <p class="c-philosophy__text">誰もが参加できるスポーツイベントを軸に、商業・観光との連携や新しいアイデアを取り入れ、地域に楽しい交流の場を広げます。</p>
+            <div class="p-philosophy__body">
+              <p class="p-philosophy__text">誰もが参加できるスポーツイベントを軸に、商業・観光との連携や新しいアイデアを取り入れ、地域に楽しい交流の場を広げます。</p>
             </div>
           </li>
-          <li class="c-philosophy__item" aria-labelledby="value-title">
-            <div class="c-philosophy__figure">
+          <li class="p-philosophy__item" aria-labelledby="value-title">
+            <div class="p-philosophy__figure">
               <img src="assets/images/tsn-value.jpg" alt="バリューを象徴するアイコン">
             </div>
-            <div class="c-philosophy__body">
-              <p class="c-philosophy__text">すべての世代にスポーツのきっかけと楽しさを提供し、行政・企業・町民とともに青少年の健全育成と地域社会の活性化に努めます。</p>
+            <div class="p-philosophy__body">
+              <p class="p-philosophy__text">すべての世代にスポーツのきっかけと楽しさを提供し、行政・企業・町民とともに青少年の健全育成と地域社会の活性化に努めます。</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <section id="activities" class="o-section c-activities" aria-labelledby="activities-title">
+    <section id="activities" class="o-section p-activities" aria-labelledby="activities-title">
       <div class="o-container">
         <header class="c-section-header">
           <h2 id="activities-title" class="c-section-header__title">活動内容</h2>
         </header>
-          <ol class="c-activities__list">
-            <li class="c-activities__item">
+          <ol class="p-activities__list">
+            <li class="p-activities__item">
               <strong>ソサイチリーグの開催</strong>
               <p>誰もが気軽に参加できる7人制サッカー大会「TAKAMORIソサイチリーグ」を定期開催し、子どもから大人まで交流の場を提供しています。</p>
             </li>
-            <li class="c-activities__item">
+            <li class="p-activities__item">
               <strong>ウォーキングフットボールの普及</strong>
               <p>年齢や経験を問わず楽しめる「歩くサッカー」の体験会や大会を支援し、健康増進と地域交流を推進しています。</p>
             </li>
-            <li class="c-activities__item">
+            <li class="p-activities__item">
               <strong>保育園サッカー教室</strong>
               <p>町内の保育園児を対象にサッカー教室を実施し、子どもたちに体を動かす楽しさと仲間づくりの機会を届けています。</p>
             </li>
           </ol>
-        <p class="c-activities__action"><a class="c-button c-button--outline" href="#">詳細はこちら</a></p>
+        <p class="p-activities__action"><a class="c-button c-button--outline" href="#">詳細はこちら</a></p>
       </div>
     </section>
-    <section id="news" class="o-section c-news" aria-labelledby="news-title">
-      <div class="o-container">
-        <header class="c-section-header">
-          <h2 id="news-title" class="c-section-header__title">お知らせ</h2>
-          <p class="c-section-header__lead">高森スポーツネットワークからの新着情報をお知らせします。</p>
-        </header>
-        <ul class="c-news__list">
-          <li class="c-news__item" aria-labelledby="news-item-1-title">
-            <time class="c-news__date" datetime="2025-11-01">2025年11月1日</time>
-            <h3 id="news-item-1-title" class="c-news__title">高森ウォーキングフットボール大会を開催しました。</h3>
-          </li>
-          <li class="c-news__item" aria-labelledby="news-item-2-title">
-            <time class="c-news__date" datetime="2025-11-08">2025年11月8日</time>
-            <h3 id="news-item-2-title" class="c-news__title">第8回高森ソサイチ大会を開催しました。</h3>
-          </li>
-          <li class="c-news__item" aria-labelledby="news-item-3-title">
-            <time class="c-news__date" datetime="2025-11-01">2025年11月1日</time>
-            <h3 id="news-item-3-title" class="c-news__title">テキストテキストテキスト</h3>
-          </li>
-          <li class="c-news__item" aria-labelledby="news-item-4-title">
-            <time class="c-news__date" datetime="2025-11-01">2025年11月1日</time>
-            <h3 id="news-item-4-title" class="c-news__title">テキストテキストテキスト</h3>
-          </li>
-          <li class="c-news__item" aria-labelledby="news-item-5-title">
-            <time class="c-news__date" datetime="2025-11-01">2025年11月1日</time>
-            <h3 id="news-item-5-title" class="c-news__title">テキストテキストテキスト</h3>
-          </li>
-          <li class="c-news__item" aria-labelledby="news-item-6-title">
-            <time class="c-news__date" datetime="2025-11-01">2025年11月1日</time>
-            <h3 id="news-item-6-title" class="c-news__title">テキストテキストテキスト</h3>
-          </li>
-        </ul>
-        <p class="c-news__action"><a class="c-button c-button--ghost" href="#">お知らせ一覧</a></p>
-      </div>
-    </section>
-    <section id="greeting" class="o-section c-greeting" aria-labelledby="greeting-title">
+    <section id="greeting" class="o-section p-greeting" aria-labelledby="greeting-title">
       <div class="o-container">
         <header class="c-section-header">
           <h2 id="greeting-title" class="c-section-header__title">代表挨拶</h2>
         </header>
-        <div class="c-greeting__body">
-          <p class="c-greeting__message">
+        <div class="p-greeting__body">
+          <p class="p-greeting__message">
             私たちは「スポーツを通じて地域を元気にすること」を使命に、世代や立場を超えて交流できる場づくりを目指しています。<br>
             スポーツには、人をつなぎ、笑顔や新しい出会いを生む力があります。<br>
             子どもには運動の楽しさを、大人には健康と活力を、高齢者には生きがいや仲間とのつながりを提供できると信じています。 <br>
@@ -151,110 +121,145 @@
             スローガンは「For everyone's smiles（みんなの笑顔のために）」。 <br>
             その言葉の通り、町民の皆様、そして訪れる方々に笑顔を届けられる活動を続けていきます。<br>
             今後ともご支援、ご協力をよろしくお願い申し上げます。</p>
-          <p class="c-greeting__signature">
-            <span class="c-greeting__role">一般社団法人高森スポーツネットワーク代表</span>
-            <span class="c-greeting__name">岡本 俊生</span>
+          <p class="p-greeting__signature">
+            <span class="p-greeting__role">一般社団法人高森スポーツネットワーク代表</span>
+            <span class="p-greeting__name">岡本 俊生</span>
           </p>
         </div>
       </div>
     </section>
-    <section id="team" class="o-section c-members" aria-labelledby="team-title">
+    <section id="team" class="o-section p-members" aria-labelledby="team-title">
       <div class="o-container">
         <header class="c-section-header">
           <h2 id="team-title" class="c-section-header__title">社員紹介</h2>
         </header>
-        <div class="c-member-table">
-          <div class="c-member-table__row" aria-label="代表社員">
-            <div class="c-member-table__role">代表社員</div>
-            <div class="c-member-table__name">岡本 俊生</div>
-            <ul class="c-member-table__affiliations">
+        <div class="p-member-table">
+          <div class="p-member-table__row" aria-label="代表社員">
+            <div class="p-member-table__role">代表社員</div>
+            <div class="p-member-table__name">岡本 俊生</div>
+            <ul class="p-member-table__affiliations">
               <li><a href="https://www.t-wave-1998.jp/">(株)ティーウェーブ</a></li>
               <li><a href="https://escada-takamori.com/">高森スポーツ少年団サッカー部</a></li>
               <li><a href="https://takamori-sc.site/">高森サッカークラブ</a></li>
             </ul>
           </div>
-          <div class="c-member-table__row" aria-label="社員">
-            <div class="c-member-table__role">社員</div>
-            <div class="c-member-table__name">岡本 駿汰</div>
-            <ul class="c-member-table__affiliations">
+          <div class="p-member-table__row" aria-label="社員">
+            <div class="p-member-table__role">社員</div>
+            <div class="p-member-table__name">岡本 駿汰</div>
+            <ul class="p-member-table__affiliations">
               <li><a href="https://ws-ensemble.com/social_participation01/">社会福祉法人アンサンブル</a></li>
               <li><a href="https://escada0707.1web.jp/">高森ソサイチリーグ</a></li>
             </ul>
           </div>
-          <div class="c-member-table__row" aria-label="社員">
-            <div class="c-member-table__role">社員</div>
-            <div class="c-member-table__name">手塚 勇</div>
-            <ul class="c-member-table__affiliations">
+          <div class="p-member-table__row" aria-label="社員">
+            <div class="p-member-table__role">社員</div>
+            <div class="p-member-table__name">手塚 勇</div>
+            <ul class="p-member-table__affiliations">
               <li><a href="https://www.instagram.com/nikusobakomatsuya/">こまつ家(株)</a></li>
               <li><a href="https://norarikurari-hp.com/?fbclid=PAZXh0bgNhZW0CMTEAAacqVqoso0JR3WBMEfAJGNmQ_G-MuJkJ6WSY_76VDCloySTsyncEMtVg74s68Q_aem_o3oHYZEc9fx8pOR-d6Grzw">民泊のらりくらり</a></li>
             </ul>
           </div>
-          <div class="c-member-table__row" aria-label="社員">
-            <div class="c-member-table__role">社員</div>
-            <div class="c-member-table__name">久保田 進</div>
-            <ul class="c-member-table__affiliations">
+          <div class="p-member-table__row" aria-label="社員">
+            <div class="p-member-table__role">社員</div>
+            <div class="p-member-table__name">久保田 進</div>
+            <ul class="p-member-table__affiliations">
               <li><a href="https://www.instagram.com/zenshin_co._ltd._/">(株)前進</a></li>
               <li><a href="https://www.instagram.com/takamori.camp/">ヤマンテラ</a></li>
               <li><a href="https://www.instagram.com/uedaira.house/">ウエダイラハウス</a></li>
             </ul>
           </div>
-          <div class="c-member-table__row" aria-label="社員">
-            <div class="c-member-table__role">社員</div>
-            <div class="c-member-table__name">三島 渚</div>
-            <ul class="c-member-table__affiliations">
+          <div class="p-member-table__row" aria-label="社員">
+            <div class="p-member-table__role">社員</div>
+            <div class="p-member-table__name">三島 渚</div>
+            <ul class="p-member-table__affiliations">
               <li><a href="https://mishima-kensetsu.jp/">三島建設(株)</a></li>
               <li><a href="https://cavluck.com/">キャブラック</a></li>
             </ul>
           </div>
-          <div class="c-member-table__row" aria-label="社員">
-            <div class="c-member-table__role">社員</div>
-            <div class="c-member-table__name">上沼 直樹</div>
-            <ul class="c-member-table__affiliations">
+          <div class="p-member-table__row" aria-label="社員">
+            <div class="p-member-table__role">社員</div>
+            <div class="p-member-table__name">上沼 直樹</div>
+            <ul class="p-member-table__affiliations">
               <li><a href="https://azaleeiida.com/">(一社)アザリー飯田フットボールクラブ</a></li>
               <li>スプレモテクノ</li>
             </ul>
           </div>
         </div>
-        <p class="c-members__action"><a class="c-button c-button--ghost" href="#">理事・幹事の紹介はこちら</a></p>
+        <p class="p-members__action"><a class="c-button c-button--outline" href="#">理事・幹事の紹介はこちら</a></p>
       </div>
     </section>
-    <section id="contact" class="o-section c-contact" aria-labelledby="contact-title">
+        <section id="news" class="o-section p-news" aria-labelledby="news-title">
+      <div class="o-container">
+        <header class="c-section-header">
+          <h2 id="news-title" class="c-section-header__title">お知らせ</h2>
+          <p class="c-section-header__lead">高森スポーツネットワークからの新着情報をお知らせします。</p>
+        </header>
+        <ul class="p-news__list">
+          <li class="p-news__item" aria-labelledby="news-item-1-title">
+            <time class="p-news__date" datetime="2025-11-01">2025年11月1日</time>
+            <h3 id="news-item-1-title" class="p-news__title">高森ウォーキングフットボール大会を開催しました。</h3>
+          </li>
+          <li class="p-news__item" aria-labelledby="news-item-2-title">
+            <time class="p-news__date" datetime="2025-11-08">2025年11月8日</time>
+            <h3 id="news-item-2-title" class="p-news__title">第8回高森ソサイチ大会を開催しました。</h3>
+          </li>
+          <li class="p-news__item" aria-labelledby="news-item-3-title">
+            <time class="p-news__date" datetime="2025-11-01">2025年11月1日</time>
+            <h3 id="news-item-3-title" class="p-news__title">テキストテキストテキスト</h3>
+          </li>
+          <li class="p-news__item" aria-labelledby="news-item-4-title">
+            <time class="p-news__date" datetime="2025-11-01">2025年11月1日</time>
+            <h3 id="news-item-4-title" class="p-news__title">テキストテキストテキスト</h3>
+          </li>
+          <li class="p-news__item" aria-labelledby="news-item-5-title">
+            <time class="p-news__date" datetime="2025-11-01">2025年11月1日</time>
+            <h3 id="news-item-5-title" class="p-news__title">テキストテキストテキスト</h3>
+          </li>
+          <li class="p-news__item" aria-labelledby="news-item-6-title">
+            <time class="p-news__date" datetime="2025-11-01">2025年11月1日</time>
+            <h3 id="news-item-6-title" class="p-news__title">テキストテキストテキスト</h3>
+          </li>
+        </ul>
+        <p class="p-news__action"><a class="c-button c-button--outline" href="#">お知らせ一覧</a></p>
+      </div>
+    </section>
+    <section id="contact" class="o-section p-contact" aria-labelledby="contact-title">
       <div class="o-container">
         <header class="c-section-header">
           <h2 id="contact-title" class="c-section-header__title">お問い合わせ</h2>
         </header>
-        <form class="c-form" action="#" method="post">
-          <div class="c-form__row">
-            <label class="c-form__label" for="contact-name">お名前</label>
-            <input class="c-form__control" id="contact-name" name="name" type="text" autocomplete="name">
+        <form class="p-form" action="#" method="post">
+          <div class="p-form__row">
+            <label class="p-form__label" for="contact-name">お名前</label>
+            <input class="p-form__control" id="contact-name" name="name" type="text" autocomplete="name">
           </div>
-          <div class="c-form__row">
-            <label class="c-form__label" for="contact-kana">ふりがな</label>
-            <input class="c-form__control" id="contact-kana" name="kana" type="text">
+          <div class="p-form__row">
+            <label class="p-form__label" for="contact-kana">ふりがな</label>
+            <input class="p-form__control" id="contact-kana" name="kana" type="text">
           </div>
-          <div class="c-form__row">
-            <label class="c-form__label" for="contact-org">会社名・組織名</label>
-            <input class="c-form__control" id="contact-org" name="organization" type="text">
+          <div class="p-form__row">
+            <label class="p-form__label" for="contact-org">会社名・組織名</label>
+            <input class="p-form__control" id="contact-org" name="organization" type="text">
           </div>
-          <div class="c-form__row">
-            <label class="c-form__label" for="contact-phone">電話番号</label>
-            <input class="c-form__control" id="contact-phone" name="phone" type="tel" autocomplete="tel">
+          <div class="p-form__row">
+            <label class="p-form__label" for="contact-phone">電話番号</label>
+            <input class="p-form__control" id="contact-phone" name="phone" type="tel" autocomplete="tel">
           </div>
-          <div class="c-form__row">
-            <label class="c-form__label" for="contact-email">メールアドレス</label>
-            <input class="c-form__control" id="contact-email" name="email" type="email" autocomplete="email">
+          <div class="p-form__row">
+            <label class="p-form__label" for="contact-email">メールアドレス</label>
+            <input class="p-form__control" id="contact-email" name="email" type="email" autocomplete="email">
           </div>
-          <div class="c-form__row c-form__row--textarea">
-            <label class="c-form__label" for="contact-message">お問い合わせ内容</label>
-            <textarea class="c-form__control" id="contact-message" name="message" rows="6"></textarea>
+          <div class="p-form__row p-form__row--textarea">
+            <label class="p-form__label" for="contact-message">お問い合わせ内容</label>
+            <textarea class="p-form__control" id="contact-message" name="message" rows="6"></textarea>
           </div>
-          <div class="c-form__consent">
-            <label class="c-checkbox">
-              <input class="c-checkbox__input" id="contact-consent" type="checkbox" name="consent">
-              <span class="c-checkbox__label">プライバシーポリシーに同意</span>
+          <div class="p-form__consent">
+            <label class="p-checkbox">
+              <input class="p-checkbox__input" id="contact-consent" type="checkbox" name="consent">
+              <span class="p-checkbox__label">プライバシーポリシーに同意</span>
             </label>
           </div>
-          <div class="c-form__action">
+          <div class="p-form__action">
             <button class="c-button" type="submit">確認する</button>
           </div>
         </form>
@@ -262,21 +267,21 @@
     </section>
   </main>
   <footer class="l-footer" role="contentinfo">
-    <div class="o-container c-footer">
-      <div class="c-footer__upper">
-        <div class="c-footer__brand">
-          <img class="c-footer__logo" src="assets/images/TSN-logo-bg.png" alt="高森スポーツネットワークのロゴ">
-          <div class="c-footer__info">
-            <p class="c-footer__name">一般社団法人<br>高森スポーツネットワーク</p>
-            <ul class="c-footer__contact">
+    <div class="o-container p-footer">
+      <div class="p-footer__upper">
+        <div class="p-footer__brand">
+          <img class="p-footer__logo" src="assets/images/TSN-logo-bg.png" alt="高森スポーツネットワークのロゴ">
+          <div class="p-footer__info">
+            <p class="p-footer__name">一般社団法人<br>高森スポーツネットワーク</p>
+            <ul class="p-footer__contact">
               <li>〒399-3103 長野県下伊那郡高森町2965-10</li>
               <li>TEL 0265-34-1420</li>
               <li>mail@takamorisports.com</li>
             </ul>
           </div>
         </div>
-        <nav class="c-footer-nav" aria-label="フッターナビゲーション">
-          <ul class="c-footer-nav__list">
+        <nav class="p-footer-nav" aria-label="フッターナビゲーション">
+          <ul class="p-footer-nav__list">
             <li><a href="#">ホーム</a></li>
             <li><a href="#philosophy">企業理念</a></li>
             <li><a href="#activities">活動内容</a></li>
@@ -285,8 +290,8 @@
           </ul>
         </nav>
       </div>
-      <div class="c-footer__lower">
-        <small class="c-footer__copyright">&copy; 2025 高森スポーツネットワーク</small>
+      <div class="p-footer__lower">
+        <small class="p-footer__copyright">&copy; 2025 高森スポーツネットワーク</small>
       </div>
     </div>
   </footer>

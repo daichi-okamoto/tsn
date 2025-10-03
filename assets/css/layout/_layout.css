@@ -1,0 +1,46 @@
+/* Layout layer */
+.l-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.l-header {
+  background-color: rgb(255, 255, 255, 0.8);
+  box-shadow: 0 10px 25px rgba(10, 40, 94, 0.08);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+}
+
+.l-header__inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 48px);
+}
+
+.l-main {
+  flex: 1;
+}
+
+.l-footer {
+  background: linear-gradient(140deg, #022356 0%, #07367f 55%, #0e4296 100%);
+  color: #fff;
+  margin-top: clamp(64px, 9vw, 120px);
+  padding: clamp(56px, 8vw, 88px) 0;
+}
+
+@media (max-width: 992px) {
+  .l-header__inner {
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .l-header__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+}

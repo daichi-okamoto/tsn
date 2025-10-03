@@ -1,0 +1,16 @@
+:root {
+  --color-base: #ffffff;
+  --color-surface: #ffffff;
+  --color-primary: #0d3f95;
+  --color-primary-dark: #072d72;
+  --color-primary-light: #2f67d9;
+  --color-accent: #1c8ad8;
+  --color-text: #1f2640;
+  --color-text-muted: #5c6c91;
+  --color-border: #cfd5e6;
+  --color-border-strong: #a9b5d5;
+  --color-shadow: rgba(22, 44, 102, 0.12);
+  --layout-width: 1080px;
+  --layout-gutter: clamp(16px, 3vw, 40px);
+  --font-sans: "Noto Serif JP", "Hiragino Mincho ProN", "游明朝", "Yu Mincho", "Sawarabi Mincho", "MS PMincho", serif;
+}

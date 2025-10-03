@@ -1,0 +1,529 @@
+/* Project: Home page specific components */
+/* Hero ---------------------------------- */
+.p-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  min-height: clamp(460px, 60vw, 560px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.p-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+.p-hero__body {
+  position: relative;
+  z-index: 1;
+  padding: clamp(80px, 10vw, 140px) var(--layout-gutter);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 4vw, 32px);
+}
+
+.p-hero__title {
+  font-size: clamp(2.6rem, 6vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.p-hero__lead {
+  font-size: clamp(1.05rem, 2.6vw, 1.3rem);
+  letter-spacing: 0.06em;
+}
+
+/* Philosophy Cards ---------------------- */
+.p-philosophy {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(24px, 4vw, 36px);
+}
+
+.p-philosophy__item {
+  background-color: var(--color-surface);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px var(--color-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.p-philosophy__figure {
+  height: 180px;
+  background: linear-gradient(135deg, rgba(13, 63, 149, 0.18), rgba(31, 114, 209, 0.28));
+}
+
+.p-philosophy__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-philosophy__body {
+  padding: 24px clamp(18px, 3vw, 24px) 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.p-philosophy__heading {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+}
+
+.p-philosophy__text {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+/* Activities ---------------------------- */
+.p-activities {
+  background-image: url("../../../images/tsn-bg-details.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.p-activities__title {
+  margin-top: 70px;
+}
+
+.p-activities__page {
+  background-image: url("../../../images/tsn-bg-details.png");
+  background-position: center 86%;
+  height: 460px;
+  background-size: cover;
+  text-align: center;
+}
+
+.p-activities__list {
+  max-width: 640px;
+  margin: 0 auto clamp(36px, 6vw, 48px);
+  display: grid;
+  gap: clamp(16px, 3vw, 24px);
+  counter-reset: activities;
+}
+
+.p-activities__item {
+  position: relative;
+  padding-left: 72px;
+  font-weight: 600;
+  font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+  color: var(--color-text);
+  text-align: left;
+}
+
+.p-activities__item::before {
+  counter-increment: activities;
+  content: counter(activities);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 12px 24px rgba(13, 63, 149, 0.18);
+}
+
+.p-activities__item strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.p-activities__action {
+  text-align: center;
+}
+
+/* News ---------------------------------- */
+.p-news__list {
+  margin: 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.p-news__item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: clamp(18px, 3vw, 28px);
+  padding: clamp(18px, 3vw, 24px) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.p-news__item:last-child {
+  border-bottom: none;
+}
+
+.p-news__date {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+}
+
+.p-news__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.p-news__action {
+  margin-top: clamp(24px, 4vw, 36px);
+  text-align: center;
+}
+
+/* Greeting ------------------------------ */
+.p-greeting__body {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 4vw, 32px);
+}
+
+.p-greeting__message {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.p-greeting__signature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+}
+
+.p-greeting__name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  /* border-bottom: 2px solid var(--color-primary); */
+  padding-bottom: 4px;
+}
+
+/* Members ------------------------------- */
+.p-member-table {
+  display: flex;
+  flex-direction: column;
+  /* gap: clamp(20px, 3vw, 28px); */
+}
+
+.p-member-table__row {
+  display: grid;
+  grid-template-columns: 150px 180px 1fr;
+  gap: clamp(12px, 2vw, 24px);
+  padding: clamp(12px, 2vw, 18px) clamp(16px, 4vw, 24px);
+  align-items: start;
+  border-radius: 18px;
+  transition: transform 0.2s ease;
+}
+
+.p-member-table__row:nth-child(even) {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(28, 138, 216, 0.18) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.p-member-table__row:hover {
+  transform: translateY(-2px);
+}
+
+.p-member-table__role {
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+}
+
+.p-member-table__name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.p-member-table__affiliations {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.92rem;
+  color: var(--color-text);
+}
+
+.p-member-table__affiliations a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.p-member-table__affiliations a:hover,
+.p-member-table__affiliations a:focus-visible {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+.p-members__action {
+  text-align: center;
+  margin-top: clamp(36px, 5vw, 48px);
+}
+
+/* Contact -------------------------------- */
+.p-form {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  border-radius: 20px;
+  padding: clamp(36px, 6vw, 48px) clamp(28px, 6vw, 56px);
+  box-shadow: 0 20px 50px rgba(18, 52, 118, 0.14);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(18px, 4vw, 28px);
+}
+
+.p-form__row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: clamp(12px, 3vw, 24px);
+  align-items: center;
+}
+
+.p-form__row--textarea {
+  align-items: start;
+}
+
+.p-form__label {
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+}
+
+.p-form__control {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1.5px solid var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0 2px 6px rgba(13, 63, 149, 0.12);
+  font-size: 1rem;
+}
+
+.p-form__control:focus-visible {
+  outline: none;
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px rgba(46, 101, 196, 0.24);
+}
+
+.p-form__control[type="textarea"],
+.p-form__row--textarea .p-form__control {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.p-form__consent {
+  display: flex;
+  justify-content: center;
+}
+
+.p-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.p-checkbox__input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--color-primary);
+}
+
+.p-form__action {
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Footer -------------------------------- */
+.p-footer {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 6vw, 48px);
+}
+
+.p-footer__upper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(28px, 6vw, 48px);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.p-footer__brand {
+  display: flex;
+  gap: clamp(18px, 4vw, 32px);
+  align-items: flex-start;
+}
+
+.p-footer__logo {
+  width: clamp(110px, 18vw, 160px);
+  height: auto;
+}
+
+.p-footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+}
+
+.p-footer__name {
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.p-footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  opacity: 0.85;
+}
+
+.p-footer-nav__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, max-content));
+  gap: 10px 28px;
+  font-size: 0.95rem;
+}
+
+.p-footer-nav__list a {
+  opacity: 0.9;
+}
+
+.p-footer-nav__list a:hover,
+.p-footer-nav__list a:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.p-footer__lower {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .p-news__item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .p-form__row {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .p-form__label {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 720px) {
+  .p-philosophy__item {
+    border-radius: 16px;
+  }
+
+  .p-activities__item {
+    padding-left: 56px;
+  }
+
+  .p-activities__item::before {
+    width: 42px;
+    height: 42px;
+  }
+
+  .p-activities__page {
+    background-position: center 86%;
+    height: 200px;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .p-activities__title {
+    margin-top: 54px;
+  }
+
+  .p-member-table__row {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "role name"
+      "affiliations affiliations";
+    gap: 8px 16px;
+    align-items: center;
+  }
+
+  .p-member-table__role {
+    grid-area: role;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .p-member-table__name {
+    grid-area: name;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .p-member-table__affiliations {
+    grid-area: affiliations;
+  }
+
+  .p-form {
+    padding: clamp(28px, 10vw, 40px);
+  }
+
+  .p-checkbox {
+    font-size: 0.9rem;
+  }
+
+  .p-footer-nav__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .p-hero__title {
+    letter-spacing: 0.06em;
+  }
+
+  .p-hero__lead {
+    letter-spacing: 0.04em;
+  }
+}

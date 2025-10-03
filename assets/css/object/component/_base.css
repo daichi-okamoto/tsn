@@ -1,0 +1,90 @@
+/* Object (Component): shared structure and utilities */
+.o-container {
+  width: min(var(--layout-width), calc(100% - var(--layout-gutter) * 2));
+  margin: 0 auto;
+}
+
+.o-section {
+  padding: clamp(72px, 10vw, 120px) 0;
+}
+
+.c-section-header {
+  text-align: center;
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.c-section-header__title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.c-section-header__lead {
+  margin-top: clamp(16px, 2.4vw, 20px);
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 42px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 14px 30px rgba(7, 38, 98, 0.2);
+}
+
+.c-button:hover,
+.c-button:focus-visible {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 18px 32px rgba(7, 38, 98, 0.26);
+}
+
+.c-button--outline {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: none;
+}
+
+.c-button--outline:hover,
+.c-button--outline:focus-visible {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(13, 63, 149, 0.22);
+}
+
+.c-button--ghost {
+  background: #fff;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border-strong);
+  box-shadow: none;
+  padding: 12px 32px;
+}
+
+.c-button--ghost:hover,
+.c-button--ghost:focus-visible {
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 20px rgba(13, 63, 149, 0.12);
+}
+
+@media (max-width: 720px) {
+  .o-section {
+    padding: clamp(48px, 12vw, 72px) 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .c-button,
+  .c-button--outline,
+  .c-button--ghost {
+    width: 100%;
+  }
+}
