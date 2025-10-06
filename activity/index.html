@@ -48,8 +48,153 @@
     </section>
     <section>
       <!-- ここからコーディングをしてください -->
-
+    <section class="o-section p-members" style="counter-reset: activities;"> <!-- ここで項目ごとに疑似要素の数字が入るように、activitiesのカウンタリセット入れました。aria-labelledby="team-title"を削除しました -->
+      <div class="o-container">
+          <h3 class="p-activities__item">
+            <span class="is-accent">ソサイチ大会主催</span> <!-- strongを使わずに文字色をつけるため、spanを利用しました。classも新しく作っています。-->
+          </h3>
+        <div class="p-member-table">
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第1回大会</div>
+            <div class="p-member-table__name">2023年8月12日</div>
+            <div class="p-member-table__affiliations">5チーム出場</div>
+          </div>
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第2回大会</div>
+            <div class="p-member-table__name">2023年10月8日</div>
+            <div class="p-member-table__affiliations">7チーム出場</div>
+          </div>
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第3回大会</div>
+            <div class="p-member-table__name">2024年3月17日</div>
+            <div class="p-member-table__affiliations">9チーム出場</div>
+          </div>
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第4回大会</div>
+            <div class="p-member-table__name">2024年7月14日</div>
+            <div class="p-member-table__affiliations">9チーム出場</div>
+          </div>
+        <div class="p-member-table">
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第5回大会</div>
+            <div class="p-member-table__name">2024年12月15日</div>
+            <div class="p-member-table__affiliations">15チーム出場</div>
+          </div>
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第6回大会</div>
+            <div class="p-member-table__name">2025年3月23日</div>
+            <div class="p-member-table__affiliations">18チーム出場</div>
+          </div>
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第7回大会</div>
+            <div class="p-member-table__name">2025年7月20日</div>
+            <div class="p-member-table__affiliations">13チーム出場</div>
+          </div>
+          <div class="p-member-table__row">
+            <div class="p-member-table__role">第8回大会</div>
+            <div class="p-member-table__name">2025年11月8日</div>
+            <div class="p-member-table__affiliations">15チーム出場</div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="o-section p-members">
+      <div class="o-container">
+          <h3 class="p-activities__item">
+            <span class="is-accent">ウォーキングフットボール普及活動</span>
+          </h3>
+        <div class="p-member-table">
+          <div class="p-activities-table__row">
+            <div class="p-member-table__role">第1回ウォーキングフットボール体験会</div>
+            <div class="p-member-table__name">2025年5月23日 </div>
+            <div class="p-member-table__affiliations">高森ほたるパーク アリーナ</div>
+          </div>
+          <div class="p-activities-table__row">
+            <div class="p-member-table__role">第2回ウォーキングフットボール体験会 </div>
+            <div class="p-member-table__name"> </div>
+            <div class="p-member-table__affiliations">高森ほたるパーク アリーナ</div>
+          </div>
+          <div class="p-activities-table__row">
+            <div class="p-member-table__role">第3回ウォーキングフットボール体験会 </div>
+            <div class="p-member-table__name">2025年7月4日</div>
+            <div class="p-member-table__affiliations"> </div>
+          </div>
+          <div class="p-activities-table__row">
+            <div class="p-member-table__role">公民館スポーツフェスティバル</div>
+            <div class="p-member-table__name">2025年10月13日</div>
+            <div class="p-member-table__affiliations"> </div>
+          </div>
+
+          <div class="p-activities-table__row">
+            <div class="p-member-table__role">体育協会主催ウォーキングフットボール大会サポート</div>
+            <div class="p-member-table__name">2025年11月1日</div>
+            <div class="p-member-table__affiliations"> </div>
+          </div>
+        </div>
+        <div class="p-member-table__affiliations" > <!-- CSSをいじらずにリンクの表示を統一するため、社員紹介のクラス名を再利用しました。 -->
+          <a href="https://takamorilove.net/2025/08/31/17922" >※ウォーキングフットボール体験会の様子</a>
+          <p>＜たかもり通信＞</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="o-section p-members" aria-labelledby="team-title">
+      <div class="o-container">
+         <h3 class="p-activities__item">
+          <span class="is-accent">保育園サッカー教室</span>
+        </h3>
+        <p class="p-activities__text"> <!-- 少し余白をつけるためにclass名を新しく作りました。 -->
+          R7年2月13日、高森町内4園合同のサッカー教室がほたるパークで行われました。<br>
+          このサッカー教室は高森スポーツ少年団サッカー部が主催しており、高森サッカークラブのメンバー、アザリー飯田コーチングスタッフがサポートし、町内保育園（下市田保育園、山吹保育園、ぱどま保育園、あかり保育園の年長さん（合計93人）と楽しくサッカーを行いました。<br>
+          高森町では2006年に始まったこの活動ですが、当時は各保育園を巡回し園庭で行っていました。<br>
+          すべての保育園を数日に分けて町民体育館に集めて行うようになったのは2009年からになります。<br>
+          町内の保育園児が去年オープンした人工芝サッカー場に入場する機会があまり無いという事もあり、今年はほたるパークサッカー場で開催をしました。<br>
+          また、11月11日にはあかり保育園3園（高森あかり保育園、鼎あかり保育園、松尾あかり保育園）合同のサッカー教室を予定しています。<br>
+          （福）萱垣会では3園合同での行事は初めてということで今から注目されています。
+        </p>
+        <div class="p-member-table__affiliations"> <!-- CSSをいじらずにリンクの表示を統一するため、社員紹介のクラス名を再利用しました。 -->
+          <a href="https://takamorilove.net/2025/02/26/15528" >※ほたるパークでの４園合同のサッカー教室の様子</a>
+        </div>
+        <p>＜たかもり通信＞</p>
+
+      </div>
+
+      </div>
+    </section>    
+
+
+
+
+  <footer class="l-footer" role="contentinfo">
+    <div class="o-container p-footer">
+      <div class="p-footer__upper">
+        <div class="p-footer__brand">
+          <img class="p-footer__logo" src="/assets/images/TSN-logo-bg.png" alt="高森スポーツネットワークのロゴ">
+          <div class="p-footer__info">
+            <p class="p-footer__name">一般社団法人<br>高森スポーツネットワーク</p>
+            <ul class="p-footer__contact">
+              <li>〒399-3103 長野県下伊那郡高森町2965-10</li>
+              <li>TEL 0265-34-1420</li>
+              <li>mail@takamorisports.com</li>
+            </ul>
+          </div>
+        </div>
+        <nav class="p-footer-nav" aria-label="フッターナビゲーション">
+          <ul class="p-footer-nav__list">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#philosophy">企業理念</a></li>
+            <li><a href="#activities">活動内容</a></li>
+            <li><a href="#team">社員紹介</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="p-footer__lower">
+        <small class="p-footer__copyright">&copy; 2025 高森スポーツネットワーク</small>
+      </div>
+    </div>
+  </footer>
   </main>
   <script src="../assets/js/main.js" defer></script>
 </body>

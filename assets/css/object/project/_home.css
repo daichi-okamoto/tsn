@@ -147,7 +147,8 @@
   box-shadow: 0 12px 24px rgba(13, 63, 149, 0.18);
 }
 
-.p-activities__item strong {
+.p-activities__item strong,
+.p-activities__item .is-accent {  /* .p-activities__item .is-accent 活動内容ページに利用するため追加しました。*/
   display: block;
   margin-bottom: 6px;
   color: var(--color-primary);
@@ -156,6 +157,29 @@
 
 .p-activities__action {
   text-align: center;
+}
+
+.p-activities__text{ /* 保育園サッカー教室の上下の余白部分を確保するために追加しました */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.p-activities-table__row { /* ウォーキングフットボール普及活動の活動名を１行にするため作成した部分です */
+  display: grid;
+  grid-template-columns: 450px 180px 1fr;
+  gap: clamp(12px, 2vw, 24px);
+  padding: clamp(12px, 2vw, 18px) clamp(16px, 4vw, 24px);
+  align-items: start;
+  border-radius: 18px;
+  transition: transform 0.2s ease;
+}
+
+.p-activities-table__row:nth-child(even) {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(28, 138, 216, 0.18) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.p-activities-table__row:hover {
+  transform: translateY(-2px);
 }
 
 /* News ---------------------------------- */
@@ -239,7 +263,7 @@
 
 .p-member-table__row {
   display: grid;
-  grid-template-columns: 150px 180px 1fr;
+  grid-template-columns: 150px 180px 1fr; /* grid-template-columns: 450px 180px 1fr;*/
   gap: clamp(12px, 2vw, 24px);
   padding: clamp(12px, 2vw, 18px) clamp(16px, 4vw, 24px);
   align-items: start;
@@ -451,6 +475,16 @@
   .p-form__label {
     margin-bottom: 4px;
   }
+
+  .p-activities-table__row {
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "role name"
+    "affiliations affiliations";
+  gap: 8px 16px;
+  align-items: center;
+  }
+
 }
 
 @media (max-width: 720px) {
@@ -476,6 +510,16 @@
 
   .p-activities__title {
     margin-top: 54px;
+  }
+
+  .p-activities-table__row {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "role"
+    "name"
+    "affiliations";
+  gap: 8px;
+  align-items: center;
   }
 
   .p-member-table__row {
